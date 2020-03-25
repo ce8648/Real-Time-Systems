@@ -1,0 +1,5 @@
+	我發現使用RM(t1 periority = 99, t3 periority = 98)
+的情況下t1 miss rate趨近於零,t3 miss rate相較t1大蠻多
+的。
+	使用RMI的情況下t3的優先權比t1大，所以miss rate變得
+沒有相對RM那麼懸殊。
