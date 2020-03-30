@@ -7,8 +7,7 @@
 #include <unistd.h>
 #include <signal.h>
 
-sig_atomic_t t = 0;
-int miss = 0;
+sig_atomic_t t = 0, miss = 0;
 void collectData (int param)
 {
     std::cout << (double)::miss/::t << std::endl;
