@@ -1,0 +1,3 @@
+  如果不鎖定cpu時脈的話，cpu會因為cpu使用率或是是否有穩定電源供應（筆電）
+造成時脈會時高時低，workload的response time也會有較大的浮動，所以我在i7-8
+700 cpu上設定時脈在3.7GHz，確保我的workload穩定接近1ms。
