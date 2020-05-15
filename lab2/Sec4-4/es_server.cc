@@ -45,12 +45,12 @@ class EventServiceImpl final : public EventService::Service {
                    ServerWriter<TopicData>* writer) override {
     // TODO 
     std::string t = "QAQ", d = "hi";
-    TopicData td;
-    td.set_topic(t);
-    td.set_data(d);
+    TopicData data;
+    data.set_topic(t);
+    data.set_data(d);
     for (int i = 0; i < 10; i++) {
     // TODO: push the right fake data to the event subscriber
-        writer->Write(td);
+        writer->Write(data);
     }
     return Status::OK;
   }

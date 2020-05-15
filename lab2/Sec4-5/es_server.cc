@@ -53,9 +53,9 @@ class EventServiceImpl final : public EventService::Service {
                    ServerReader<TopicData>* reader,
                    NoUse* nouse) override {
     // TODO
-    TopicData td;
-    while (reader->Read(&td)) {
-      std::cout << "{" << td.topic() << ": " << td.data() << "}  ";
+    TopicData data;
+    while (reader->Read(&data)) {
+      std::cout << "{" << data.topic() << ": " << data.data() << "}  ";
     }
     std::cout <<"receive succeeded."<< std::endl;
     return Status::OK;
