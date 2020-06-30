@@ -1,0 +1,3 @@
+EDF : message會依據他的Deadline決定他是否會先被處理，Deadline越小，則每次在從Priority Queue取Message出來的時候越優先被取出來做處理。
+RM : message會依據他的Period大小決定他是否會先被處理，如果Period越小，則每次在從Priority Queue取Message出來的時候越優先被取出來做Scheduling。
+FIFO : message會依據他的Arrival time大小決定他是否會先被處理，先新增的Message能先被處理

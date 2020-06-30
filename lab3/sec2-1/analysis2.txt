@@ -1,0 +1,1 @@
+decoupling的缺點是需要讓Priority Queue在執行任何操作時都保證是Atomic的。
